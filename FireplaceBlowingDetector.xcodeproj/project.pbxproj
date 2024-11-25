@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB3A01162CF4CE4C004C3ACD /* NWWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = DB3A01152CF4CE4C004C3ACD /* NWWebSocket */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBA6A32C2CF4BCD900FBAE02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBA6A3132CF4BCD800FBAE02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA6A31A2CF4BCD800FBAE02;
+			remoteInfo = FireplaceBlowingDetector;
+		};
+		DBA6A3362CF4BCD900FBAE02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBA6A3132CF4BCD800FBAE02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA6A31A2CF4BCD800FBAE02;
+			remoteInfo = FireplaceBlowingDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBA6A31B2CF4BCD800FBAE02 /* FireplaceBlowingDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireplaceBlowingDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA6A32B2CF4BCD900FBAE02 /* FireplaceBlowingDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireplaceBlowingDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA6A3352CF4BCD900FBAE02 /* FireplaceBlowingDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireplaceBlowingDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DB3A01182CF4CFA2004C3ACD /* Exceptions for "FireplaceBlowingDetector" folder in "FireplaceBlowingDetector" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DBA6A31A2CF4BCD800FBAE02 /* FireplaceBlowingDetector */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DBA6A31D2CF4BCD800FBAE02 /* FireplaceBlowingDetector */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DB3A01182CF4CFA2004C3ACD /* Exceptions for "FireplaceBlowingDetector" folder in "FireplaceBlowingDetector" target */,
+			);
+			path = FireplaceBlowingDetector;
+			sourceTree = "<group>";
+		};
+		DBA6A32E2CF4BCD900FBAE02 /* FireplaceBlowingDetectorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FireplaceBlowingDetectorTests;
+			sourceTree = "<group>";
+		};
+		DBA6A3382CF4BCD900FBAE02 /* FireplaceBlowingDetectorUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FireplaceBlowingDetectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBA6A3182CF4BCD800FBAE02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3A01162CF4CE4C004C3ACD /* NWWebSocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA6A3282CF4BCD900FBAE02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA6A3322CF4BCD900FBAE02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBA6A3122CF4BCD800FBAE02 = {
+			isa = PBXGroup;
+			children = (
+				DBA6A31D2CF4BCD800FBAE02 /* FireplaceBlowingDetector */,
+				DBA6A32E2CF4BCD900FBAE02 /* FireplaceBlowingDetectorTests */,
+				DBA6A3382CF4BCD900FBAE02 /* FireplaceBlowingDetectorUITests */,
+				DBA6A31C2CF4BCD800FBAE02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBA6A31C2CF4BCD800FBAE02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBA6A31B2CF4BCD800FBAE02 /* FireplaceBlowingDetector.app */,
+				DBA6A32B2CF4BCD900FBAE02 /* FireplaceBlowingDetectorTests.xctest */,
+				DBA6A3352CF4BCD900FBAE02 /* FireplaceBlowingDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBA6A31A2CF4BCD800FBAE02 /* FireplaceBlowingDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA6A33F2CF4BCD900FBAE02 /* Build configuration list for PBXNativeTarget "FireplaceBlowingDetector" */;
+			buildPhases = (
+				DBA6A3172CF4BCD800FBAE02 /* Sources */,
+				DBA6A3182CF4BCD800FBAE02 /* Frameworks */,
+				DBA6A3192CF4BCD800FBAE02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DBA6A31D2CF4BCD800FBAE02 /* FireplaceBlowingDetector */,
+			);
+			name = FireplaceBlowingDetector;
+			packageProductDependencies = (
+				DB3A01152CF4CE4C004C3ACD /* NWWebSocket */,
+			);
+			productName = FireplaceBlowingDetector;
+			productReference = DBA6A31B2CF4BCD800FBAE02 /* FireplaceBlowingDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBA6A32A2CF4BCD900FBAE02 /* FireplaceBlowingDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA6A3422CF4BCD900FBAE02 /* Build configuration list for PBXNativeTarget "FireplaceBlowingDetectorTests" */;
+			buildPhases = (
+				DBA6A3272CF4BCD900FBAE02 /* Sources */,
+				DBA6A3282CF4BCD900FBAE02 /* Frameworks */,
+				DBA6A3292CF4BCD900FBAE02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA6A32D2CF4BCD900FBAE02 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DBA6A32E2CF4BCD900FBAE02 /* FireplaceBlowingDetectorTests */,
+			);
+			name = FireplaceBlowingDetectorTests;
+			packageProductDependencies = (
+			);
+			productName = FireplaceBlowingDetectorTests;
+			productReference = DBA6A32B2CF4BCD900FBAE02 /* FireplaceBlowingDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBA6A3342CF4BCD900FBAE02 /* FireplaceBlowingDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA6A3452CF4BCD900FBAE02 /* Build configuration list for PBXNativeTarget "FireplaceBlowingDetectorUITests" */;
+			buildPhases = (
+				DBA6A3312CF4BCD900FBAE02 /* Sources */,
+				DBA6A3322CF4BCD900FBAE02 /* Frameworks */,
+				DBA6A3332CF4BCD900FBAE02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA6A3372CF4BCD900FBAE02 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DBA6A3382CF4BCD900FBAE02 /* FireplaceBlowingDetectorUITests */,
+			);
+			name = FireplaceBlowingDetectorUITests;
+			packageProductDependencies = (
+			);
+			productName = FireplaceBlowingDetectorUITests;
+			productReference = DBA6A3352CF4BCD900FBAE02 /* FireplaceBlowingDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBA6A3132CF4BCD800FBAE02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					DBA6A31A2CF4BCD800FBAE02 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					DBA6A32A2CF4BCD900FBAE02 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = DBA6A31A2CF4BCD800FBAE02;
+					};
+					DBA6A3342CF4BCD900FBAE02 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = DBA6A31A2CF4BCD800FBAE02;
+					};
+				};
+			};
+			buildConfigurationList = DBA6A3162CF4BCD800FBAE02 /* Build configuration list for PBXProject "FireplaceBlowingDetector" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBA6A3122CF4BCD800FBAE02;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DBA6A3502CF4C28000FBAE02 /* XCRemoteSwiftPackageReference "NWWebSocket" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DBA6A31C2CF4BCD800FBAE02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBA6A31A2CF4BCD800FBAE02 /* FireplaceBlowingDetector */,
+				DBA6A32A2CF4BCD900FBAE02 /* FireplaceBlowingDetectorTests */,
+				DBA6A3342CF4BCD900FBAE02 /* FireplaceBlowingDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBA6A3192CF4BCD800FBAE02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA6A3292CF4BCD900FBAE02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA6A3332CF4BCD900FBAE02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBA6A3172CF4BCD800FBAE02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA6A3272CF4BCD900FBAE02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA6A3312CF4BCD900FBAE02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBA6A32D2CF4BCD900FBAE02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBA6A31A2CF4BCD800FBAE02 /* FireplaceBlowingDetector */;
+			targetProxy = DBA6A32C2CF4BCD900FBAE02 /* PBXContainerItemProxy */;
+		};
+		DBA6A3372CF4BCD900FBAE02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBA6A31A2CF4BCD800FBAE02 /* FireplaceBlowingDetector */;
+			targetProxy = DBA6A3362CF4BCD900FBAE02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DBA6A33D2CF4BCD900FBAE02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBA6A33E2CF4BCD900FBAE02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBA6A3402CF4BCD900FBAE02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FireplaceBlowingDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = LK2358MPL8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FireplaceBlowingDetector/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"We need to access microphone data to recognize blow\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.mathieu-dubart.FireplaceBlowingDetector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBA6A3412CF4BCD900FBAE02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FireplaceBlowingDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = LK2358MPL8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FireplaceBlowingDetector/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"We need to access microphone data to recognize blow\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.mathieu-dubart.FireplaceBlowingDetector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBA6A3432CF4BCD900FBAE02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LK2358MPL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.mathieu-dubart.FireplaceBlowingDetectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireplaceBlowingDetector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FireplaceBlowingDetector";
+			};
+			name = Debug;
+		};
+		DBA6A3442CF4BCD900FBAE02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LK2358MPL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.mathieu-dubart.FireplaceBlowingDetectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireplaceBlowingDetector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FireplaceBlowingDetector";
+			};
+			name = Release;
+		};
+		DBA6A3462CF4BCD900FBAE02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LK2358MPL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.mathieu-dubart.FireplaceBlowingDetectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FireplaceBlowingDetector;
+			};
+			name = Debug;
+		};
+		DBA6A3472CF4BCD900FBAE02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LK2358MPL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.mathieu-dubart.FireplaceBlowingDetectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FireplaceBlowingDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBA6A3162CF4BCD800FBAE02 /* Build configuration list for PBXProject "FireplaceBlowingDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA6A33D2CF4BCD900FBAE02 /* Debug */,
+				DBA6A33E2CF4BCD900FBAE02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA6A33F2CF4BCD900FBAE02 /* Build configuration list for PBXNativeTarget "FireplaceBlowingDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA6A3402CF4BCD900FBAE02 /* Debug */,
+				DBA6A3412CF4BCD900FBAE02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA6A3422CF4BCD900FBAE02 /* Build configuration list for PBXNativeTarget "FireplaceBlowingDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA6A3432CF4BCD900FBAE02 /* Debug */,
+				DBA6A3442CF4BCD900FBAE02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA6A3452CF4BCD900FBAE02 /* Build configuration list for PBXNativeTarget "FireplaceBlowingDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA6A3462CF4BCD900FBAE02 /* Debug */,
+				DBA6A3472CF4BCD900FBAE02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBA6A3502CF4C28000FBAE02 /* XCRemoteSwiftPackageReference "NWWebSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pusher/NWWebSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB3A01152CF4CE4C004C3ACD /* NWWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBA6A3502CF4C28000FBAE02 /* XCRemoteSwiftPackageReference "NWWebSocket" */;
+			productName = NWWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DBA6A3132CF4BCD800FBAE02 /* Project object */;
+}
