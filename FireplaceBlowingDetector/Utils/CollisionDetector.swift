@@ -36,7 +36,7 @@ class CollisionDetector {
             isCollisionDetected = true
             print("COLLISION DÉTECTÉE! Intensité: \(collisionIntensity)")
             print("Données gyroscopiques - X: \(x), Y: \(y), Z: \(z)")
-            wsClient.sendMessage("allumer", toRoute: "allumerFeu")
+            wsClient.sendMessage("allumer", toRoute: "phoneFireplace")
             onCollisionDetected?()
             
             // Réinitialisation après un délai pour éviter plusieurs détections consécutives

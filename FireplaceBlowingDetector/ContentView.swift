@@ -12,6 +12,12 @@ struct ContentView: View {
     @ObservedObject var wsClient = WebSocketClient.shared
     @State var connectedToServer: Bool = false
     
+    @State var spheroIsConnected = false
+    
+    
+    let spherosNames: [String] = ["SB-C7A8"]
+    private let collisionDetector = CollisionDetector(toyBox: SharedToyBox.instance)
+    
     var body: some View {
         VStack {
             Text("Recording...")
@@ -26,16 +32,26 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            connectedToServer = wsClient.connectTo(route:"fireplace")
+            connectedToServer = wsClient.connectTo(route:"phoneFireplace")
             microphoneMonitor.startMonitoring()
+            SharedToyBox.instance.searchForBoltsNamed(spherosNames) { err in
+                if err == nil {
+                    print("Connected to sphero")
+                    self.spheroIsConnected.toggle()
+                    collisionDetector.startMonitoring()
+                } else {
+                    print(self.spheroIsConnected)
+                }
+            }
         }
         .onDisappear {
+            SharedToyBox.instance.stopSensors()
             wsClient.disconnectFromAllRoutes()
             connectedToServer = false
         }
         .onChange(of: microphoneMonitor.isSouffling) {
             if self.connectedToServer && microphoneMonitor.isSouffling {
-                wsClient.sendMessage("souffle", toRoute: "fireplace")
+                wsClient.sendMessage("souffle", toRoute: "phoneFireplace")
             }
         }
     }

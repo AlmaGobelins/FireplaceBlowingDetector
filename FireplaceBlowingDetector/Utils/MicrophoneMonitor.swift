@@ -146,7 +146,7 @@ class MicrophoneMonitor: ObservableObject {
             
         
         let rms = sqrt(channelDataArray.map { $0 * $0 }.reduce(0, +) / Float(buffer.frameLength))
-        print(rms)
+        //print(rms)
         if rms > 0.3 {
             DispatchQueue.main.async {
                 self.isSouffling = true
