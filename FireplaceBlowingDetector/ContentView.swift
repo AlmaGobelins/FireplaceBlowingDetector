@@ -15,7 +15,9 @@ struct ContentView: View {
     @State var spheroIsConnected = false
     
     
-    let spherosNames: [String] = ["SB-C7A8"]
+    //let spherosNames: [String] = ["SB-C7A8"]
+    let spherosNames: [String] = ["SB-42C1"]
+    //let spherosNames: [String] = ["SB-A729"]
     private let collisionDetector = CollisionDetector(toyBox: SharedToyBox.instance)
     
     var body: some View {
