@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var connectedToServer: Bool = false
     @State var spheroIsConnected = false
     
-    @State private var ip: String = "192.168.0.132:8080"
+    @State private var ip: String = "192.168.1.100:8080"
     @State private var route: String = "phoneFireplace"
     
     let spherosNames: [String] = ["SB-42C1"] // "SB-C7A8" - "SB-A729"
@@ -46,7 +46,7 @@ struct ContentView: View {
         .onChange(of: ip) {
             wsClient.ipAdress = ip
         }
-        .onAppear {
+        /*.onAppear {
             SharedToyBox.instance.searchForBoltsNamed(spherosNames) { err in
                 if err == nil {
                     print("Connected to sphero")
@@ -56,16 +56,16 @@ struct ContentView: View {
                     print(self.spheroIsConnected)
                 }
             }
-        }
+        }*/
         .onDisappear {
             SharedToyBox.instance.stopSensors()
             wsClient.disconnectFromAllRoutes()
             connectedToServer = false
         }
         .onChange(of: microphoneMonitor.isSouffling) {
-            if self.connectedToServer && microphoneMonitor.isSouffling {
+            
                 wsClient.sendMessage("souffle", toRoute: route)
-            }
+            
         }
     }
 }
