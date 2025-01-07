@@ -17,10 +17,11 @@ class WebSocketClient: ObservableObject {
     }
     
     static let shared:WebSocketClient = WebSocketClient()
+
     
     var routes = [String:NWWebSocket]()
-    var ipAdress: String = "192.168.1.100:8080"
-    @Published var receivedMessage: String = ""
+    var ipAdress: String = "192.168.0.166:8080"
+    
     
     func connectTo(route:String) -> Bool {
         let socketURL = URL(string: "ws://\(ipAdress)/\(route)")
@@ -60,42 +61,45 @@ extension WebSocketClient: WebSocketConnectionDelegate {
         // Respond to a WebSocket connection event
         print("WebSocket connected")
     }
-
+    
     func webSocketDidDisconnect(connection: WebSocketConnection,
                                 closeCode: NWProtocolWebSocket.CloseCode, reason: Data?) {
         // Respond to a WebSocket disconnection event
         print("WebSocket disconnected")
     }
-
+    
     func webSocketViabilityDidChange(connection: WebSocketConnection, isViable: Bool) {
         // Respond to a WebSocket connection viability change event
         print("WebSocket viability: \(isViable)")
     }
-
+    
     func webSocketDidAttemptBetterPathMigration(result: Result<WebSocketConnection, NWError>) {
         // Respond to when a WebSocket connection migrates to a better network path
         // (e.g. A device moves from a cellular connection to a Wi-Fi connection)
     }
-
+    
     func webSocketDidReceiveError(connection: WebSocketConnection, error: NWError) {
         // Respond to a WebSocket error event
         print("WebSocket error: \(error)")
     }
-
+    
     func webSocketDidReceivePong(connection: WebSocketConnection) {
         // Respond to a WebSocket connection receiving a Pong from the peer
         print("WebSocket received Pong")
     }
-
+    
     func webSocketDidReceiveMessage(connection: WebSocketConnection, string: String) {
         // Respond to a WebSocket connection receiving a `String` message
         print("WebSocket received message: \(string)")
-        self.receivedMessage = string
+        
         if string == "ping" {
-            self.sendMessage("pong", toRoute: "phoneFireplace")
+            self.sendMessage("pong", toRoute: "phoneFire")
         }
+        
+    
+        
     }
-
+    
     func webSocketDidReceiveMessage(connection: WebSocketConnection, data: Data) {
         // Respond to a WebSocket connection receiving a binary `Data` message
         print("WebSocket received Data message \(data)")
