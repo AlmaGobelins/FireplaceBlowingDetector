@@ -12,7 +12,7 @@ struct ContentView: View {
     @ObservedObject var wsClient = WebSocketClient.shared
     @State var spheroIsConnected = false
     private var route = "phoneFire"
-    let spherosNames: [String] = ["SB-42C1"] // "SB-C7A8" - "SB-A729"
+    let spherosNames: [String] = ["SB-2020"] // "SB-C7A8" - "SB-A729"
     
     private let collisionDetector = CollisionDetector(toyBox: SharedToyBox.instance)
     
