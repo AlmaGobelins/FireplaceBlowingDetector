@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var microphoneMonitor = MicrophoneMonitor()
     @ObservedObject var wsClient = WebSocketClient.shared
+
     @State var spheroIsConnected = false
-    private var route = "phoneFire"
     let spherosNames: [String] = ["SB-2020"] // "SB-C7A8" - "SB-A729"
     
     private let collisionDetector = CollisionDetector(toyBox: SharedToyBox.instance)
@@ -29,7 +29,7 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            let _ = wsClient.connectTo(route: route)
+            let _ = wsClient.connectTo(route: "phoneFire")
 
             SharedToyBox.instance.searchForBoltsNamed(spherosNames) { err in
                 if err == nil {
@@ -48,7 +48,7 @@ struct ContentView: View {
             wsClient.disconnectFromAllRoutes()
         }
         .onChange(of: microphoneMonitor.isSouffling) {
-                wsClient.sendMessage("souffle", toRoute: route)
+                wsClient.sendMessage("souffle", toRoute: "phoneFire")
         }
     }
 }
